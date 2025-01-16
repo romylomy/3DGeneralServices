@@ -1,0 +1,95 @@
+---
+import footerLogo from '~/assets/images/footerLogo.svg';
+import Logo from '~/assets/images/footerLogo.svg';
+import { Image } from 'astro:assets';
+---
+
+<section class="bg-gray-100">
+  <div class="px-6 py-12 mx-auto max-w-7xl lg:px-20 relative">
+    <!-- Contact Us Section -->
+    <div class="sm:flex items-center justify-between gap-12 border-t border-gray-300 py-12">
+      <!-- Logo -->
+      <Logo size={650} class="hidden md:block mx-auto sm:mx-0" />
+      
+      <!-- Contact Details -->
+      <div class="max-w-lg text-center sm:text-left">
+        <h2 class="text-4xl font-bold text-gray-800">Contact Us</h2>
+        <p class="mt-4 text-gray-600">
+          We're here to help! Reach out to us via email, visit our location, or call during our business hours.
+        </p>
+        
+        <div class="flex flex-col gap-6 mt-6 sm:flex-row sm:gap-12">
+          <!-- Hours -->
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800">Hours of Operation</h3>
+            <p class="mt-2 text-gray-600">
+              Monday - Friday: 9:00 AM - 6:00 PM<br />
+              Saturday: 10:00 AM - 4:00 PM<br />
+              Sunday: Closed
+            </p>
+          </div>
+          
+          <!-- Email -->
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800">Email</h3>
+            <p class="mt-2 text-gray-600">
+              <a href="mailto:info@example.com" class="hover:text-blue-600">info@example.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="flex justify-center sm:justify-start gap-4 mt-8">
+          <a
+            href="tel:+1234567890"
+            class="bg-green-600 text-white px-5 py-3 rounded-lg shadow hover:bg-green-700 focus:ring-2 focus:ring-green-800 focus:outline-none"
+          >
+            Call Us Now
+          </a>
+          <a
+            href="mailto:info@example.com"
+            class="bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 focus:ring-2 focus:ring-blue-800 focus:outline-none"
+          >
+            Email Us
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Navigation -->
+    <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12 mt-12 border-t border-gray-300 pt-12">
+      <!-- Company -->
+      <div>
+        <h2 class="text-lg font-semibold text-gray-800">Company</h2>
+        <ul class="mt-4 space-y-2 text-gray-600">
+          <li><a href="/#about-us" class="hover:text-blue-600">About</a></li>
+        </ul>
+      </div>
+      
+      <!-- Services -->
+      <div>
+        <h2 class="text-lg font-semibold text-gray-800">Services</h2>
+        <ul class="mt-4 space-y-2 text-gray-600">
+          <li><a href="#" class="hover:text-blue-600">Roof Installation</a></li>
+          <li><a href="#" class="hover:text-blue-600">Painting</a></li>
+        </ul>
+      </div>
+      
+      <!-- Resources -->
+      <div class="mx-auto md:mx-0">
+        <h2 class="text-lg font-semibold text-gray-800">Resources</h2>
+        <ul class="mt-4 space-y-2 text-gray-600 text-center md:text-left">
+          <li><a href="/#quoting-steps" class="hover:text-blue-600">Quoting Steps</a></li>
+          <li><a href="/FAQ" class="hover:text-blue-600">FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="flex  items-center justify-center sm:justify-between mt-12 border-t border-gray-300 pt-8 sm:flex-row">
+      <Logo size={200} class="mb-4 sm:mb-0 sm:hidden" />
+      <p class="text-gray-600 text-sm">
+        Copyright © 2025 Romylomy. All rights reserved.
+      </p>
+    </div>
+  </div>
+</section>

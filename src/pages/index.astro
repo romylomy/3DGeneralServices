@@ -1,0 +1,189 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Free Estimate',
+        href: 'tel:+5874341801',
+        target: '_blank',
+        icon: 'tabler:phone',
+      },
+      
+    ]}
+    image={{ src: '~/assets/images/3DGeneralConstructionltd.png', alt: 'AstroWind Hero Image' }}
+  >
+    <Fragment slot="title">
+      FREE <br/> ESTIMATE ON </br>
+      <span class="text-blue-700 dark:text-white highlight">SHINGLE INSTALLATION</span> 
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="">
+        <span class="font-semibold">3D General Services</span> provides Free Estimates with a complete scope of recommended work to be completed on your roof.
+      
+      
+    </Fragment>
+  </Hero>
+
+  <!-- Features Widget *************** -->
+
+  
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="about-us"
+    isReversed
+    tagline="about us"
+    title="Your Calgarian Contractor"
+    items={[
+    {
+      title: 'Trust and Transparency',
+      description:
+        'We believe in honest communication and delivering on our promises. With us, you’ll always know what to expect.',
+    },
+    {
+      title: 'Personalized Service',
+      description:
+        'Every project is unique, and we take the time to understand your needs, preferences, and vision for your home.',
+    },
+    {
+      title: 'Community Focus',
+      description:
+        'As a local business, we’re dedicated to serving our neighbors in Calgary and contributing to the community’s growth.',
+    },
+  ]}
+    image={{
+      src: '~/assets/images/ourServices.png',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+          <h3 class="text-2xl  font-bold tracking-tight dark:text-white sm:text-3xl mb-2"> Better single-family home renovations
+ in calgary </h3>
+
+Let us handle your home improvements with ease. From Calgary’s weather challenges to tailored suburban solutions, we’re here to protect and enhance your home stress-free.    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <BlogLatestPosts
+    id="services"
+    title="Our Home <br/> renovation services"
+
+  />
+
+
+  <Features
+    id="about"
+    tagline="asphalt roofing services"
+    title="Why should you <br/> consider asphalt  roofing in Calgary? "
+    subtitle="This composite material is one of your most affordable options but is also durable and attractive on most residential homes."
+    items={[
+      {
+        title: 'More Durable',
+        description:
+          'Organic-mat shingles last longer and stay secure in severe storms',
+        icon: 'tabler:shield-half',
+      },
+      {
+        title: 'Cold Climate Performance',
+        description:
+          'Organic shingles perform well in harsh winters, making them ideal for colder regions.',
+        icon: 'tabler:temperature-snow',
+      },
+      {
+        title: 'Affordable',
+        description:
+          'Slightly less expensive than other shingle types.',
+        icon: 'tabler:pig-money',
+      },
+    ]}
+  />
+
+
+
+  
+ 
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Re-Roofing Quoting Steps"
+    id="quoting-steps"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Site Measurement</span>',
+        description:
+          "A roofing team member will visit your property or we’ll use EagleView Technologies for precise measurements quickly.",
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Discuss Options</span>',
+        description:
+          "Meet face-to-face to review shingles, accessories, and budget-friendly solutions.",
+        icon: 'tabler:letter-case',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Contract & Deposit</span>',
+        description:
+          'Sign the contract and pay a 20% deposit (no price changes unless you change the scope).',
+        icon: 'tabler:paint',
+      },
+      {
+        title: 'Ready!',
+        icon: 'tabler:check',
+      },
+    ]}
+   
+  />
+
+    <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Free Quote',
+        href: 'tel:+5874341801',
+        target: '_blank',
+        icon: 'tabler:phone',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Get Your <br/> Free Quote Now
+    </Fragment>
+
+    <Fragment slot="subtitle">
+    3D General Services provides Free Estimates with a complete scope of recommended work to be completed on your roof.
+    </Fragment>
+  </CallToAction>
+
+
+  
+
+</Layout>

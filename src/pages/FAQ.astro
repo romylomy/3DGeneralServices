@@ -1,0 +1,59 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import FAQs from '~/components/widgets/FAQs.astro';
+
+const metadata = {
+  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+ 
+
+  <!-- FAQs Widget ******************* -->
+<FAQs
+  title="Frequently Asked Questions"
+  subtitle="Find answers to common questions about our roofing services and how we can help improve your home."
+  tagline="FAQs"
+  classes={{ container: 'max-w-6xl' }}
+  items={[
+    {
+      title: 'Why should I choose 3D General Services for my roofing needs?',
+      description:
+        'We specialize in professional roofing solutions tailored to Calgary’s unique climate, offering durable, weather-resistant installations that provide peace of mind.',
+    },
+    {
+      title: 'What does the free estimate include?',
+      description:
+        'Our free estimate includes a complete scope of recommended work, precise measurements, and budget-friendly options to suit your needs.',
+    },
+    {
+      title: 'What are the benefits of asphalt roofing?',
+      description:
+        'Asphalt roofing is an affordable and durable choice for residential homes, offering excellent cold-climate performance and long-lasting protection during severe storms.',
+    },
+    {
+      title: 'How does the re-roofing process work?',
+      description:
+        'The process includes site measurement (either in-person or using EagleView Technologies), discussing shingles and accessories, and finalizing the contract with a 20% deposit.',
+    },
+    {
+      title: 'Are organic shingles suitable for Calgary’s climate?',
+      description:
+        'Yes, organic shingles are ideal for Calgary’s harsh winters. They perform exceptionally well in cold climates and provide enhanced durability.',
+    },
+    {
+      title: 'Do you offer roofing repair and maintenance services?',
+      description:
+        'Yes, we provide expert installation, repair, and maintenance services to ensure your roof remains in excellent condition year-round.',
+    },
+  
+  ]}
+/>
+
+
+  
+
+</Layout>
