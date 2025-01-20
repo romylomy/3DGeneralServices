@@ -2,7 +2,7 @@
 publishDate: 2023-08-12T00:00:00Z
 author: John Smith
 title: Roofing Installation
-excerpt: Start your web journey with AstroWind – harness Astro and Tailwind CSS for a stunning site. Explore our guide now.
+excerpt: Get reliable roofing installation with quality materials and expert care. Learn about our process today.
 image: ~/assets/images/roofingservice.png
 category: Tutorials
 tags:

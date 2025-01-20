@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: 3D General Services
+  site: 'https://3-d-general-services.vercel.app/'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: 3D Gerneral Services
+    template: '3D Gerneral Services'
+  description: "Transform your Calgary home with expert renovation and roofing services. From kitchens and bathrooms to complete remodels and reliable roofing solutions, we deliver quality craftsmanship tailored to your needs"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: 3D Gerneral Services
     images:
       - url: '~/assets/images/default.png'
         width: 1200
