@@ -9,8 +9,8 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: 3D Gerneral Services
-    template: '3D Gerneral Services'
+    default: 3D General Services
+    template: '3D General Services'
   description: "Transform your Calgary home with expert renovation and roofing services. From kitchens and bathrooms to complete remodels and reliable roofing solutions, we deliver quality craftsmanship tailored to your needs"
   robots:
     index: true
